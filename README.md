@@ -8,7 +8,7 @@ This stack is designed to run on a local machine (e.g., a home server) while bei
 
 ```mermaid
 graph TD
-    User([User / Internet]) -->|HTTPS| DO[Digital Ocean VM<br/>(Nginx Proxy)]
+    User([User / Internet]) -->|HTTPS| DO["Digital Ocean VM<br/>(Nginx Proxy)"]
     
     subgraph "Secure Tunnel"
         DO <==>|WireGuard VPN<br/>10.0.0.x| LocalMachine[Local Server]
@@ -16,7 +16,7 @@ graph TD
     
     subgraph "Local Docker Stack"
         LocalMachine -->|Port 3000| Gitea
-        LocalMachine -->|Port 9001| MinIO[MinIO Console]
+        LocalMachine -->|Port 9001| MinIO["MinIO Console"]
         LocalMachine -->|Port 8080| Jenkins
         LocalMachine -->|Port 8081| Nexus
         LocalMachine -->|Port 8200| Vault
