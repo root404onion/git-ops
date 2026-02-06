@@ -2,6 +2,10 @@
 
 A comprehensive, self-hosted DevOps stack running locally with Docker Compose. Designed to be accessed securely via WireGuard from a remote proxy.
 
+## 📚 Practice Resources
+
+- **Kubernetes + ArgoCD**: [https://github.com/root404onion/kubernates.git](https://github.com/root404onion/kubernates.git) - A repository for practicing **ArgoCD** GitOps workflows.
+
 ## 🏗️ Architecture
 
 This stack is designed to run on a local machine (e.g., a home server) while being accessible publicly or privately via a secure WireGuard tunnel.
@@ -68,10 +72,6 @@ To connect your local machine to the remote infrastructure:
     ```bash
     qrencode -t ansiutf8 < /etc/wireguard/clients/client1.conf
     ```
-
-## 📚 Practice Resources
-
-- **Kubernetes + ArgoCD**: [https://github.com/root404onion/kubernates.git](https://github.com/root404onion/kubernates.git) - A repository for practicing ArgoCD GitOps workflows.
 
 ## 🚀 Setup Guide
 
