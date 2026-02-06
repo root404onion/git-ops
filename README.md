@@ -1,4 +1,4 @@
-# 🚀 Xe Network - Local DevOps Stack
+# 🚀 Local DevOps Stack
 
 A comprehensive, self-hosted DevOps stack running locally with Docker Compose. Designed to be accessed securely via WireGuard from a remote proxy.
 
