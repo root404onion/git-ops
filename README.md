@@ -77,8 +77,8 @@ To connect your local machine to the remote infrastructure:
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/root404onion/git-ops.git
-    cd git-ops
+    git clone https://github.com/root404onion/devops.git
+    cd devops
     ```
 
 2.  **Configure Environment**:
