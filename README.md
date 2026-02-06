@@ -41,14 +41,44 @@ graph TD
 ## 🛠️ Prerequisites
 
 - **Docker Desktop** or Docker Engine + Compose
-- **WireGuard**: Configured if remote access is required.
+- **WireGuard**: Required for remote access.
+
+## 🔒 WireGuard Setup (Remote Access)
+
+To connect your local machine to the remote infrastructure:
+
+1.  **Install WireGuard**:
+    ```bash
+    curl -fsSL https://code.xeze.org/dev/wireguard/raw/branch/main/install.sh | sudo bash
+    ```
+
+2.  **Add User Clients**:
+    ```bash
+    wget https://code.xeze.org/dev/wireguard/raw/branch/main/add.sh
+    chmod +x add.sh
+    sudo ./add.sh
+    ```
+
+3.  **Get Client Config**:
+    ```bash
+    cat /etc/wireguard/clients/client1.conf
+    ```
+
+4.  **Generate QR Code for Mobile**:
+    ```bash
+    qrencode -t ansiutf8 < /etc/wireguard/clients/client1.conf
+    ```
+
+## 📚 Practice Resources
+
+- **Kubernetes + ArgoCD**: [https://github.com/root404onion/kubernates.git](https://github.com/root404onion/kubernates.git) - A repository for practicing ArgoCD GitOps workflows.
 
 ## 🚀 Setup Guide
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/local-devops-stack.git
-    cd local-devops-stack
+    git clone https://github.com/root404onion/git-ops.git
+    cd git-ops
     ```
 
 2.  **Configure Environment**:
